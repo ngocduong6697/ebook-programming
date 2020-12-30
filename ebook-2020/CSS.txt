@@ -1,0 +1,62 @@
+1) Explain the difference between visibility:hidden; and display:none; ? What are the pros and cons of using display:none?
+	"Display:none" – This will just hide the element and does not take any space of the element.
+	"visibility:hidden" – This also hides the element and will take space for the element and this will affect the entire layout of the document.
+	
+2) Selector:
+	div, p - Selects all <div> elements and all <p> elements
+	div p - Selects all <p> elements that are anywhere inside a <div> element
+	div > p - Selects all <p> elements where the immediate parent is a <div> element
+	div + p - Selects all <p> elements that are placed immediately after a <div> element
+	div ~ p - Selects all <p> elements that are anywhere preceded by a <div> element
+	
+3) Padding vs Margin
+	Padding: - This defines the spacing between border and element.	
+	Margin: - This defines the spacing between border and any neighboring elements.
+	
+4) What is CSS?
+	Cascading Style Sheets
+	
+5) What is the CSS selector which allows you to target every element in a web page?
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+6) Which css property is used for setting the type of cursor in CSS?
+	cursor
+	
+7) How to give rounded corners in CSS3?
+	border-radius
+	
+8) What are the five possible values for “position”?
+	Values for position: static, relative, absolute, fixed, inherit
+9) What is the default/initial value for “position”?
+	Static
+10) How does the browser determine where to place positioned elements
+	They are placed relative to the next parent element that has absolute or relative value declared
+11) What are the pros and cons of using absolute positioning?
+	Absolutely positioned elements are removed from the document flow. The positioned element does not flow around the content of other elements, nor does their content flow around the positioned element. An absolutely positioned element may overlap other elements, or be overlapped by them.
+
+12) LESS SASS
+13) What Is An ID Selector?
+	#sample {padding: 10px;}
+14) What Is A Class Selector?
+	.sampleclass {font-family: Ariel; font-size: 10; background: green;}
+	
+15) How can I select an element that has multiple classes?
+	.firstClass.secondClass {font-weight: bold;}	
+16) What Is The Difference Between An ID Selector And The Class Selector? Which is faster?
+	An ID Selector finds and modifies the style to only a single element whereas a class selector may apply to any no. of HTML elements.
+	
+17) What Are Media Queries In CSS3 And Why Do You Use Them?
+	Media queries are one of the latest features of CSS3 used to define responsive styles for devices of different shapes and sizes.
+	They are the powerful CSS tool which makes it easy to create responsive design for tablets, desktop, mobiles devices. They can help adjusting the Height, Width, Viewport, Orientation and Resolution.
+	@media screen and (min-width: 480px) {
+		body {
+			background-color: #ffffff;
+		}
+	}
+	
+18) What Is Z-Index And How Does It Work?
+	The z-index is a CSS property which defines the stack order of web elements. Higher order elements will appear before any lower order element.
+	Note – The z-index only applies to the positioned elements. For example, position:absolute, position:relative, or position:fixed.

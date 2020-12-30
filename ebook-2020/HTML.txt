@@ -1,0 +1,90 @@
+1) What is the use of data- attribute?
+	Allow you to store extra information/ data in the DOM. u can write valid html with embedded private data. You can easily access data attribute by using javascript
+	
+2) Does style1.css have to be downloaded and parsed before style2.css can be fetched? (No)
+	<head>
+		<link href="style1.css" rel="stylesheet">
+		<link href="style2.css" rel="stylesheet">
+	</head>
+	
+3) Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page? (Yes)
+	<head>
+		<link href="style1.css" rel="stylesheet">
+	</head>
+	<body>
+		<p>Paragraph 1</p>
+		<p>Paragraph 2</p>
+		<link href="style2.css" rel="stylesheet">
+	</body>
+
+4) What are optional closing tag? and why would u use it?
+	p, li, td, tr, th, html, body, etc. you don't have to provide end tag. Whenever browser hits a new tag it automatically ends the previous tag
+	
+5) What is the difference between span and div?
+	div is a block element and span is inline element. It is illegal to put block element inside inline element. div can have a p tag and a p tag can have a span. However, span can't have a div or p tag inside
+	
+6) Describe the difference between a cookie, sessionStorage and localStorage
+	cookie: Data accessible both at client side and server side. Cookie data is sent to the server side with every request.
+	sessionStorage: It stores data of current session only. It means that the data stored in session storage clears automatically when the browser is closed.
+	localStorage: Local storage is another type of HTML5 Web Storage. In local storage, data is not deleted automatically when the current browser window is closed.
+
+7) What does HTML stand for?
+	Hyper Text Markup Language
+	
+8) What is the correct HTML element for inserting a line break?
+	<br>
+	
+9) What is the correct HTML for making a checkbox?
+	<input type="checkbox">
+	
+10) What is the correct HTML for inserting an image?
+	<img src="image.gif" alt="MyImage">
+	
+11) What is an iframe?
+	An <iframe> is used to display a web page within a web page.
+	
+12) Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?
+	alt
+	
+13) "contenteditable" is used to:
+	Specify whether the content of an element should be editable or not
+	
+14) In HTML, which attribute is used to specify that an input field must be filled out?
+	required
+	
+15) What attribute can you use to specify a regular expression which describes a valid value for an input element?
+	pattern
+	
+16) POST vs GET
+	Both are methods used in HTTP requests. Generally it is said that GET is to download data and PUT is to upload data. But we can do both downloading as well as uploading either by GET/POST.
+
+	GET:
+	*If we are sending parameters in a GET request to the server, then those parameters will be visible in the URL, because in GET, parameters are append to the URL. So there’s a lack of security while uploading to the server.
+	*We can only send a limited amount of data in a GET request, because the URL has its max limit and we can not append a long data string to the URL.
+	POST:
+	*If we are using POST then we are sending parameters in the body section of a request. If we send data after using encryption in the body of an http request, it’s quite a bit more secure.
+	*We can send a lot more data using POST.
+	
+17) How many ways to include the CSS with HTML?
+	Inline CSS
+	External Style Sheet
+	Internal Style Sheet
+	
+18) What are Web Workers APIs in HTML 5?
+	Web Workers APIs provide a way in JavaScript to run something in the background that can do tasks without interfering with the user interface. As per the W3C standard "It is a JavaScript script executed from an HTML page that runs in the background, independently of other user-interface scripts that may also have been executed from the same HTML page. Web workers are able to utilize multi-core CPUs more effectively."
+19) What are the HTML lists?
+	In HTML, there are the following types of lists:
+		Unordered Lists (<ul>) - The list items are marked with the bullets.
+		Ordered Lists (<ol>) - The list items are marked with the numbers or letters.
+		Definition Lists(<dl>)- This arranges your items in the same way as they are arranged in a dictionary.
+	All lists must contain one or more list elements.
+20) In HTML what tag can be used for a multi-line text input control?
+	textarea
+21) List out few ways you can reduce page load time?
+	*Reduce image size
+	*Remove unnecessary widgets
+	*HTTP compression
+	*Placing CSS at the top and script reference at the bottom or in external files
+	*Reduce lookups
+	*Minimize redirects
+	*Caching

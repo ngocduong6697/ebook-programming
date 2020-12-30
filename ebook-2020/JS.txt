@@ -1,0 +1,70 @@
+1) What is CORS? How does it work?
+	Cross-origin resource sharing (CORS) is a mechanism that allows many resources (e.g., fonts, JavaScript, etc.) on a web page to be requested from another domain outside the domain from which the resource originated. It’s a mechanism supported in HTML5 that manages XMLHttpRequest access to a domain different.
+
+	CORS adds new HTTP headers that provide access to permitted origin domains. For HTTP methods other than GET (or POST with certain MIME types), the specification mandates that browsers first use an HTTP OPTIONS request header to solicit a list of supported (and available) methods from the server. The actual request can then be submitted. Servers can also notify clients whether “credentials” (including Cookies and HTTP Authentication data) should be sent with requests.
+	
+2) Explain the purpose of each of the HTTP request types when used with a RESTful web service.
+	The purpose of each of the HTTP request types when used with a RESTful web service is as follows:
+
+	GET: Retrieves data from the server (should only retrieve data and should have no other effect).
+	POST: Sends data to the server for a new entity. It is often used when uploading a file or submitting a completed web form.
+	PUT: Similar to POST, but used to replace an existing entity.
+	PATCH: Similar to PUT, but used to update only certain fields within an existing entity.
+	DELETE: Removes data from the server.
+	TRACE: Provides a means to test what a machine along the network path receives when a request is made. As such, it simply returns what was sent.
+	OPTIONS: Allows a client to request information about the request methods supported by a service. The relevant response header is Allow and it simply lists the supported methods. (It can also be used to request information about the request methods supported for the server where the service resides by using a * wildcard in the URI.)
+	HEAD: Same as the GET method for a resource, but returns only the response headers (i.e., with no entity-body).
+	CONNECT: Primarily used to establish a network connection to a resource (usually via some proxy that can be requested to forward an HTTP request as TCP and maintain the connection). Once established, the response sends a 200 status code and a “Connection Established” message.
+	
+3) What Are The Core Data Types Available In JavaScript?
+	Below is the list of data types available in JavaScript.
+	Number
+	Object
+	String
+	Boolean
+	Function
+	Null
+	Undefined
+	
+4) What Is Difference Between <Window.Onload> And <OnDocumentReady>?
+	The <onload> event doesn’t invoke until the page gets finished loading of CSS and images. It could cause a significant delay in rendering of the web page.
+	As a web developer, we have to ensure the page should load as quick as possible. The event <onDocumentReady> lets us only wait for the DOM to initialize instead of delaying any action required.
+	
+5) How Do You Change The Style/Class On Any Element From JavaScript?
+	document.getElementById(“input”).style.fontSize = “10”;
+	document.getElementById(“button”).className = “classname”;
+	
+6) What Is Scope In JavaScript?
+	The general meaning of scope is the accessibility of functions and variables in an application. Usually, we use them in two ways i.e. Local and Global.
+	*Local Scope: If we declare a function or variable inside a function, then we can access it only inside that function.
+	*Global Scope: Declaring a variable anywhere on the page would mean that we can access it from any of the functions on that page.
+	
+7) What Are == And === Operators In JavaScript And How Do They Differ?
+	== – Equal to operator
+	=== – Equal value and equal type operator
+	
+8) How many ways of creating an Object in javascript
+	*Using the Object() constructor: 
+		var d = new Object();
+		
+	*Using Object.create() method: 
+		var a = Object.create(null);
+		
+	*Using the bracket's: 
+		var b = {};
+		
+	*Using a function constructor:
+		var Obj = function(name) {
+		  this.name = name
+		}
+		var c = new Obj("hello"); 
+		
+	*Using the function constructor + prototype:
+		function myObj(){};
+		myObj.prototype.name = "hello";
+		var k = new myObj();
+		
+	*Singleton pattern:
+		var l = new function(){
+		  this.name = "hello";
+		}
